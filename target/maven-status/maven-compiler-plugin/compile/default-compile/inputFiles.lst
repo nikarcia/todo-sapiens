@@ -1,0 +1,11 @@
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/eception/GlobalExceptionHandler.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/dto/Mensaje.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/CrudApplication.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/repository/TodoRepository.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/entity/Todo.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/service/impl/TodoServiceImpl.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/controller/TodoController.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/config/SwaggerConfig.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/config/CorsConfig.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/eception/GeneralException.java
+/Users/nicgarci6/IdeaProjects/crud-logistica-ingeneo/crud-master/src/main/java/com/ingeneo/logistica/service/TodoService.java

@@ -1,0 +1,11 @@
+com/ingeneo/logistica/repository/TodoRepository.class
+com/ingeneo/logistica/entity/Todo.class
+com/ingeneo/logistica/CrudApplication.class
+com/ingeneo/logistica/config/SwaggerConfig.class
+com/ingeneo/logistica/controller/TodoController.class
+com/ingeneo/logistica/service/impl/TodoServiceImpl.class
+com/ingeneo/logistica/eception/GeneralException.class
+com/ingeneo/logistica/eception/GlobalExceptionHandler.class
+com/ingeneo/logistica/config/CorsConfig.class
+com/ingeneo/logistica/dto/Mensaje.class
+com/ingeneo/logistica/service/TodoService.class
