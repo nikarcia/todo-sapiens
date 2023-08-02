@@ -25,9 +25,13 @@ jobs:
 
     - name: Push Docker image to Azure Container Registry
       run: docker push sapienscontainer.azurecr.io/todo-sapiens:${{ github.sha }}
+      
 
     - name: Deploy to Azure App Service
       uses: azure/webapps-deploy@v2
       with:
         app-name: todo-sapiens
+        slot-name: 'Production'
         images: sapienscontainer.azurecr.io/todo-sapiens:${{ github.sha }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_69B4849997B5489C99308EF61F9E01F6 }}
+
