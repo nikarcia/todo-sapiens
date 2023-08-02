@@ -14,41 +14,41 @@ import java.util.Optional;
 @Service
 public class TodoServiceImpl implements TodoService {
 
-    private final TodoRepository clienteRepository;
+    private final TodoRepository todoRepository;
 
     @Autowired
-    public TodoServiceImpl(TodoRepository clienteRepository) {
-        this.clienteRepository = clienteRepository;
+    public TodoServiceImpl(TodoRepository todoRepository) {
+        this.todoRepository = todoRepository;
     }
 
     public List<Todo> listarTodos() {
-        return clienteRepository.findAll();
+        return todoRepository.findAll();
     }
 
     public Todo guardarTodo(Todo cliente) throws GeneralException {
-        return clienteRepository.save(cliente);
+        return todoRepository.save(cliente);
     }
 
     public Todo actualizarTodo(Integer id, Todo cliente) throws GeneralException {
-        Optional<Todo> clienteOptional = clienteRepository.findById(id);
+        Optional<Todo> clienteOptional = todoRepository.findById(id);
         if (!clienteOptional.isPresent()) {
             throw new GeneralException("cliente " + id + " No encontradob",HttpStatus.NOT_FOUND);
         }
         cliente.setId(id);
-        return clienteRepository.save(cliente);    }
+        return todoRepository.save(cliente);    }
 
     public boolean eliminarTodo(Integer id) throws GeneralException {
-        Optional<Todo> clienteOptional = clienteRepository.findById(id);
+        Optional<Todo> clienteOptional = todoRepository.findById(id);
         if (!clienteOptional.isPresent()) {
             throw new GeneralException("cliente " + id + " No encontrado ",HttpStatus.NOT_FOUND);
 
         }
-        clienteRepository.delete(clienteOptional.get());
+        todoRepository.delete(clienteOptional.get());
         return true;
     }
 
     public Todo obtenerTodoPorId(Integer id) throws GeneralException {
-        Optional<Todo> clienteOptional = clienteRepository.findById(id);
+        Optional<Todo> clienteOptional = todoRepository.findById(id);
         if (!clienteOptional.isPresent()) {
             throw new GeneralException("cliente " + id + " No encontrado ",HttpStatus.NOT_FOUND);
 
