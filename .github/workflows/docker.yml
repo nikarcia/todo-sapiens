@@ -21,14 +21,14 @@ jobs:
     - name: Build and push Docker image to Azure Container Registry
       uses: azure/docker-login@v1
       with:
-        login-server: your-azure-container-registry.azurecr.io
-        username: ${{ secrets.ACR_USERNAME }}
-        password: ${{ secrets.ACR_PASSWORD }}
-    - run: docker build -t your-azure-container-registry.azurecr.io/your-docker-image:latest .
-    - run: docker push your-azure-container-registry.azurecr.io/your-docker-image:latest
+        login-server: sapienscontainer.azurecr.io
+        username: sapienscontainer
+        password: ylEhxsrslke0CypBzCxxXf3wKhrvFvy54xpVtEoJaG+ACRC7hCu1
+    - run: docker build -t sapienscontainer.azurecr.io/todo-backend:latest .
+    - run: docker push sapienscontainer.azurecr.io/todo-backend:latest
 
     - name: Deploy to Azure App Service
       uses: azure/webapps-deploy@v2
       with:
         app-name: your-azure-app-service
-        images: your-azure-container-registry.azurecr.io/your-docker-image:latest
+        images: sapienscontainer.azurecr.io/todo-backend:latest
