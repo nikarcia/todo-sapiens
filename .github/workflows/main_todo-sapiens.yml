@@ -17,8 +17,8 @@ jobs:
       uses: azure/docker-login@v1
       with:
         login-server: sapienscontainer.azurecr.io
-        username: ${{ secrets.ACR_USERNAME }}
-        password: ${{ secrets.ACR_PASSWORD }}
+        username: sapienscontainer
+        password: ylEhxsrslke0CypBzCxxXf3wKhrvFvy54xpVtEoJaG+ACRC7hCu1
 
     - name: Build Docker image
       run: docker build -t sapienscontainer.azurecr.io/todo-sapiens:${{ github.sha }} .
